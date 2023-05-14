@@ -21,6 +21,7 @@
                 <option value="" disabled selected hidden data-string="settings-theme"></option>
                 <option value="default" data-string="settings-theme-default"></option>
                 <option value="native" data-string="settings-theme-native"></option>
+                <option value="transparent" data-string="settings-theme-transparent"></option>
             </select>
 
             <p class="header" data-string="settings-theme"></p>
@@ -32,10 +33,27 @@
                 <br />
                 <b data-string="settings-theme-native"></b> -
                 <span data-string="settings-theme-desc3"></span>
+                <br />
+                <b data-string="settings-theme-transparent"></b> -
+                <span data-string="settings-theme-desc4"></span>
             </div>
         </div>
         <br />
+        <div class="switch acTransparencyMode">
+            <select name="transparencyMode" data-setting="transparencyMode" class="left dropdown">
+                <option value="acrylic" data-string="settings-transparencyMode-acrylic"></option>
+                <option value="mica" data-string="settings-transparencyMode-mica"></option>
+                <option value="unified-acrylic" data-string="settings-transparencyMode-unifiedAcrylic"></option>
+                <option value="blurbehind" data-string="settings-transparencyMode-blurbehind"></option>
+            </select>
 
+            <p class="header" data-string="settings-transparencyMode"></p>
+
+            <div class="description">
+                <img class="previewimage" src="https://armcord.xyz/preview.gif" />
+            </div>
+        </div>
+        <br />
         <div class="switch acCSP">
             <label class="header">ArmCord CSP</label>
             <input id="csp" class="tgl tgl-light left" data-setting="armcordCSP" type="checkbox" />
@@ -59,7 +77,13 @@
             <p class="description" data-string="settings-startMinimized-desc"></p>
         </div>
         <br />
-
+        <div class="switch acAutoLaunch">
+            <label class="header" data-string="settings-autoLaunch"></label>
+            <input id="autoLaunch" class="tgl tgl-light left" data-setting="autoLaunch" type="checkbox" />
+            <label class="tgl-btn left" for="autoLaunch"></label>
+            <p class="description" data-string="settings-autoLaunch-desc"></p>
+        </div>
+        <br />
         <div class="switch acPatches">
             <label class="header" data-string="settings-patches"></label>
             <input id="patches" class="tgl tgl-light left" data-setting="automaticPatches" type="checkbox" />

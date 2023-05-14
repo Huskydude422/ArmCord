@@ -42,10 +42,12 @@ export function setup(): void {
         windowStyle: "default",
         channel: "stable",
         armcordCSP: true,
+        autoStart: true,
         minimizeToTray: true,
         automaticPatches: false,
         alternativePaste: false,
         mods: "none",
+        transparencyMode: "acrylic",
         spellcheck: true,
         performanceMode: "none",
         skipSplash: false,
@@ -245,10 +247,11 @@ export interface Settings {
     // Only used for external url warning dialog.
     ignoreProtocolWarning?: boolean;
     customIcon: string;
-
+    transparencyMode: "mica" | "acrylic" | "unified-acrylic" | "blurbehind";
     windowStyle: string;
     channel: string;
     armcordCSP: boolean;
+    autoStart: boolean;
     minimizeToTray: boolean;
     automaticPatches: boolean;
     alternativePaste: boolean;
