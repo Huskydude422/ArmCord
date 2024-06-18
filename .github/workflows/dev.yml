@@ -1,6 +1,6 @@
 name: Dev build
 on:
-    push:
+    workflow_dispatch:
         branches:
             - dev
 jobs:
